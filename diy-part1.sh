@@ -41,4 +41,4 @@ TARGET_DEVICES += xiaomi_ax3600
 echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 git clone --branch master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 git clone -b 18.06 https://github.com/zxlhhyccc/luci-app-v2raya package/luci-app-v2raya
-sed -i 's/192.168.1.1/10.1.1.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
