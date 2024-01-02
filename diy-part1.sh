@@ -16,6 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+git reset --hard 26f3634
 echo 'define Device/redmi_ax6
 	$(call Device/xiaomi_ax3600)
 	DEVICE_VENDOR := Redmi
@@ -40,8 +41,8 @@ TARGET_DEVICES += xiaomi_ax3600
 git clone --branch master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 git clone -b 18.06 https://github.com/zxlhhyccc/luci-app-v2raya package/luci-app-v2raya
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
 svn export https://github.com/fw876/helloworld/trunk/lua-neturl package/lua-neturl
 svn export https://github.com/fw876/helloworld/trunk/v2raya package/v2raya
