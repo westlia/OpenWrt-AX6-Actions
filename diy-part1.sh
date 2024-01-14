@@ -43,6 +43,7 @@ git clone -b 18.06 https://github.com/zxlhhyccc/luci-app-v2raya package/luci-app
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
 svn export https://github.com/fw876/helloworld/trunk/lua-neturl package/lua-neturl
 svn export https://github.com/fw876/helloworld/trunk/v2raya package/v2raya
